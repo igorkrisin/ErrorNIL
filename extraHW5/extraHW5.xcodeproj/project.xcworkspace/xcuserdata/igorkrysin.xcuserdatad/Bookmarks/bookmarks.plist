@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>107</string>
+					<key>EndingLineNumber</key>
+					<string>26</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>26</string>
+					<key>Timestamp</key>
+					<string>729856189.126206</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>extraHW5/main.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>//Result: для представления результатов запроса. Должно содержать случаи success и failure, где success при</string>
+				<key>leading</key>
+				<string>//NetworkError: для описания различных ошибок сети. Должно содержать случаи: invalideURL, invalidReponse, и invalidData, каждый из которых принимает строку с описанием ошибки.
+//HTTP: для имитации статусов HTTP ответов. Должно содержать случай response с вычисляемым свойством status, возвращающим случайное значение статуса от 200 до 500.
+</string>
+				<key>trailing</key>
+				<string>нимает строку (представляющую данные), а failure - ошибку NetworkError.
+//Реализуйте функцию fetchData:
+//
+</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>82</string>
+					<key>EndingLineNumber</key>
+					<string>26</string>
+					<key>StartingColumnNumber</key>
+					<string>81</string>
+					<key>StartingLineNumber</key>
+					<string>26</string>
+					<key>Timestamp</key>
+					<string>729856216.2273411</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>extraHW5/main.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>и</string>
+				<key>leading</key>
+				<string>//NetworkError: для описания различных ошибок сети. Должно содержать случаи: invalideURL, invalidReponse, и invalidData, каждый из которых принимает строку с описанием ошибки.
+//HTTP: для имитации статусов HTTP ответов. Должно содержать случай response с вычисляемым свойством status, возвращающим случайное значение статуса от 200 до 500.
+//Result: для представления результатов запроса. Должно содержать случаи success </string>
+				<key>trailing</key>
+				<string> failure, где success принимает строку (представляющую данные), а failure - ошибку NetworkError.
+//Реализуйте функцию fetchData:
+//
+</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>

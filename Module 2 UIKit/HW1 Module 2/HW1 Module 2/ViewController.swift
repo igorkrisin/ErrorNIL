@@ -15,20 +15,20 @@ class ViewController: UIViewController {
     var numberFlowLabel: UILabel = UILabel()
     var numberFlowLabelField: UILabel = UILabel()
     
-    private lazy var btnAction = UIAction { [self] action in
+    private lazy var btnAction = UIAction { [weak self] action in
         guard let sender = action.sender as? UIButton else { return }
         switch sender.tag {
         case 1:
-            changingLabelText(label: nameLabelField, newText: "Igor" )
-            changingLabelText(label: surNameLabelField, newText: "Krysin")
-            changingLabelText(label: numberFlowLabelField, newText: "ios 7")
+            self?.changingLabelText(label: self?.nameLabelField ?? UILabel(), newText: "Igor" )
+            self?.changingLabelText(label: self?.surNameLabelField ?? UILabel(), newText: "Krysin")
+            self?.changingLabelText(label: self?.numberFlowLabelField ?? UILabel(), newText: "ios 7")
         case 2:
-            removeTextLabel(label: nameLabelField)
-            removeTextLabel(label: surNameLabelField)
-            removeTextLabel(label: numberFlowLabelField)
+            self?.removeTextLabel(label: self?.nameLabelField ?? UILabel())
+            self?.removeTextLabel(label: self?.surNameLabelField ?? UILabel())
+            self?.removeTextLabel(label: self?.numberFlowLabelField ?? UILabel())
         default:
            
-            changingLabelText(label: nameLabel, newText: "Error")
+            self?.changingLabelText(label: self?.nameLabel ?? UILabel(), newText: "Error")
         }
     }
 

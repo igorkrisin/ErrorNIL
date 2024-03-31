@@ -8,10 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let image = UIImage(resource: .nature)
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+       
         // Do any additional setup after loading the view.
+    }
+    
+    func createImage(image: UIImage) -> UIImageView {
+        let viewImage = UIImageView(image: self.image)
+        viewImage
+        
+        return viewImage
     }
 
 

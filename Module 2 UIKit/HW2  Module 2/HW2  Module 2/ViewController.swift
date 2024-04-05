@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         [imageTopView, avatarView, userNameLable, editBtn, descriptionLabel, textViewDescription, changePassLabel, textFieldOldPass, textFieldNewPass, saveBtn].forEach {
             view.addSubview($0)
         }

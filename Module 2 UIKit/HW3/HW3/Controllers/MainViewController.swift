@@ -7,7 +7,7 @@ class MainViewController: UIViewController {
     
     //lazy var secondNameLabel: UILabel = createLabel(text: "Фамилия", frame: CGRect(x: 170, y: 130, width: 111, height: 19))
     
-    lazy var editButton: UIButton = createButton(text: "Редактировать", frame: CGRect(x: 134, y: 156, width: 147, height: 30), background: .blue, cornerRadius: 10, action: moveToEditViewAction)
+    lazy var editButton: UIButton = createButton(text: "Редактировать", frame: CGRect(x: 104, y: 55, width: 147, height: 30), background: .appBlue, cornerRadius: 10, action: moveToEditViewAction)
     
     lazy var descriptionData: UITextView = {
         $0.text = ""
@@ -15,27 +15,30 @@ class MainViewController: UIViewController {
     } (UITextView())
     
     lazy var myView: UIView = {
-        $0.backgroundColor = .gray
+        $0.backgroundColor = .appGray
         $0.layer.cornerRadius = 30
         return $0
     }(UIView(frame: CGRect(x: 30, y: 101, width: view.frame.width - 60, height: 110)))
     
     lazy var profilePhoto: UIImageView = {
         $0.image = .profilePhoto
+        $0.frame.origin = CGPoint(x: 17, y: 18)
+        $0.frame.size = CGSize(width: 75, height: 75)
         return $0
-    } (UIImageView(frame: CGRect(x: 47, y: 119, width: 75, height: 75)))
+    } (UIImageView())
     
     lazy var nameLabel: UILabel =  {
         $0.text = "Имя Фамилия"
+        $0.frame.origin = CGPoint(x: 104, y: 29)
+        $0.frame.size = CGSize(width: myView.frame.width - 90 , height: 19)
         return $0
     }(UILabel(frame: CGRect(x: 134, y: 130, width: 111, height: 19)))
     
     lazy var btnToDescriptionVC = {
             $0.setImage(.moveToDescriptionVCBtn, for: .normal)
         $0.addTarget(self, action: #selector(moveToDescriptionVC), for: .touchUpInside)
-            //$0.frame(forAlignmentRect: CGRect(x: view.frame.width - 47 - 17, y: 148, width: 17, height: 17))
             return $0
-        }(UIButton(frame: CGRect(x: view.frame.width - 47 - 17, y: 148, width: 17, height: 17)))
+    }(UIButton(frame: CGRect(x: myView.frame.width - 15 - 17, y: 47, width: 17, height: 17)))
     
     
     private lazy var moveToEditViewAction = UIAction { [weak self] action in
@@ -44,10 +47,6 @@ class MainViewController: UIViewController {
             guard let self else { return }
             nameLabel.text = ("\(text) \(text2)")
         }
-//        editVC.onUpdateSecondName = { [weak self] text in
-//            guard let self else { return }
-//            secondNameLabel.text = text
-//        }
         editVC.onUpdateTextView = { [weak self] text in
             guard let self else { return }
             descriptionData.text = text
@@ -64,8 +63,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Главная"
         view.backgroundColor = .white
-        [myView, profilePhoto, nameLabel, editButton, btnToDescriptionVC].forEach {
-            view.addSubview($0)
+        view.addSubview(myView)
+        [profilePhoto, nameLabel, editButton, btnToDescriptionVC].forEach {
+            myView.addSubview($0)
         }
     }
 

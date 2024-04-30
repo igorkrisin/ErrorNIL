@@ -20,6 +20,7 @@ class DescriptionViewController: UIViewController {
     
     lazy var nameLabel: UILabel =  {
         $0.text = "Имя Фамилия"
+        $0.textAlignment = .center
         return $0
     }(UILabel(frame: CGRect(x: 140, y: 193, width: 111, height: 19)))
     
@@ -33,7 +34,7 @@ class DescriptionViewController: UIViewController {
     }(UILabel(frame: CGRect(x: 42, y: 245, width: 54, height: 19)))
     
     lazy var descriptionTextViewAboutMySelf: UITextView = {
-        $0.backgroundColor = .gray
+        $0.backgroundColor = .appGray
         $0.layer.cornerRadius = 15
         $0.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         $0.text = descriptionTextView

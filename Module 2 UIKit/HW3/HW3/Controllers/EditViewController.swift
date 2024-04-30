@@ -18,14 +18,14 @@ class EditViewController: UIViewController {
     var textDescriptonView = ""
     
     lazy var nameLabel: UILabel = createLabel(text: "Имя", frame: CGRect(x: 42, y: 97, width: 34, height: 19))
-    lazy var nameTextField: UITextField = createTextField(placeholder: "", frame: CGRect(x: 30, y: 121, width: view.frame.width - 60, height: 51), background: .gray, cornerRadius: 15)
+    lazy var nameTextField: UITextField = createTextField(placeholder: "", frame: CGRect(x: 30, y: 121, width: view.frame.width - 60, height: 51), background: .appGray, cornerRadius: 15)
     lazy var secondNameLabel: UILabel = createLabel(text: "Фамилия", frame: CGRect(x: 42, y: 194, width: 82, height: 19))
-    lazy var secondNameTextField: UITextField = createTextField(placeholder: "", frame: CGRect(x: 30, y: 218, width: view.frame.width - 60, height: 51), background: .gray, cornerRadius: 15)
+    lazy var secondNameTextField: UITextField = createTextField(placeholder: "", frame: CGRect(x: 30, y: 218, width: view.frame.width - 60, height: 51), background: .appGray, cornerRadius: 15)
     lazy var descriptionLabel: UILabel = createLabel(text: "Описание", frame: CGRect(x: 42, y: 291, width: 82, height: 19))
     
     
     lazy var descriptionTextView: UITextView = {
-        $0.backgroundColor = .gray
+        $0.backgroundColor = .appGray
         $0.layer.cornerRadius = 15
         $0.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         $0.font = UIFont(name: "Inter", size: 16)

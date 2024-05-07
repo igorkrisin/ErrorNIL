@@ -118,7 +118,7 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController: UICollectionViewDataSource{
+extension ViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         collectionData.count

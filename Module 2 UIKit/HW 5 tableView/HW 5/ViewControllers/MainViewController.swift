@@ -46,10 +46,10 @@ extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
         
-        //let cellForTable = arrayDataForTable[indexPath.section][indexPath.row]
+        let cellForTable = arrayDataForTable[indexPath.section][indexPath.row]
         
         var config = cell.defaultContentConfiguration()
-        config.text = cell.[indexPath.section][indexPath.row].arrayDataForTable
+        config.text = cellForTable.nameLabel
         config.secondaryText = "\(self.countMessage) сообщений"
         config.textProperties.font = UIFont.systemFont(ofSize: 16)
         config.image = UIImage(named:  arrayDataForTable[indexPath.section][indexPath.row].image)
@@ -84,6 +84,7 @@ extension MainViewController: UITableViewDelegate {
             return "New"
         }
         return "Best"
+        
     }
 }
 

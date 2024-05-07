@@ -20,11 +20,7 @@ class ProfileViewController: UIViewController {
     var name = ""
     var secondName = ""
     
-    var textMessage: [String] = []
-    
-   // var arrayDataForTable: [ModelDataMessages] = ModelDataMessages.createMessageArray()
-    
-    lazy var arrayDataForTable = returnModelDataMessage(image: self.сhangeImage, name: self.name, text: textMessage)
+    var arrayDataForTable: [ModelDataMessages] = ModelDataMessages.createMessageArray()
     
     lazy var profileImage: UIImageView = {
         $0.frame.size = CGSize(width: 136, height: 136)
@@ -80,7 +76,7 @@ extension ProfileViewController: UITableViewDataSource {
         config.image = UIImage(named: self.сhangeImage)
         config.imageProperties.cornerRadius = (config.image?.size.width ?? 0) / 2
         config.imageProperties.maximumSize = CGSize(width: 56, height: 56)
-        
+        delegate?.profileViewController(self, didUpdateData: arrayDataForTable.count)
         print("arrcount: ", arrayDataForTable.count)
         cell.contentConfiguration = config
         return cell
@@ -96,7 +92,6 @@ extension ProfileViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        delegate?.profileViewController(self, didUpdateData: arrayDataForTable.count)
         arrayDataForTable.remove(at: indexPath.row)
         profileTable.deleteRows(at: [indexPath], with: .automatic)
     }

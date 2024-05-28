@@ -12,7 +12,6 @@ class NewsHeaderCell: UICollectionReusableView {
     
     private lazy var headerBtnAction = UIAction { [weak self] action in
        print("Header BTN")
-        
     }
     
     func setupHeader(header: String) {

@@ -36,7 +36,7 @@ final class AuthVC: UIViewController {
             self?.showAlert(message: "Ошибка: Неверный пароль")
         } else {
             NotificationCenter.default.post(Notification(name: .setRoot, userInfo: ["vc": "profile"]))
-            NotificationCenter.default.post(Notification(name: .setRoot, object: nil, userInfo: ["email": email]))
+            //NotificationCenter.default.post(Notification(name: .setRoot, object: nil, userInfo: ["email": email]))
         }
     }
     

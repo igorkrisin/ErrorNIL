@@ -75,19 +75,19 @@ class ProfileController: UIViewController {
     }
     
     func setComponents() {
-        NotificationCenter.default.addObserver(self, selector: #selector(handleSetRoot(nt: )), name: .setRoot, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(handleSetRoot(nt: )), name: .setRoot, object: nil)
         captionLabel.text = "Мой профиль"
-        emailLAbel.text = "Email пользователя"
+        emailLAbel.text = Service.shared.email
         exitBtn.layer.cornerRadius = 5
         exitBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .regular)
     }
     
-    @objc
-    private func handleSetRoot(nt: Notification) {
-        if let userInfo = nt.userInfo, let email = userInfo["email"] as? String {
-            self.emailLAbel.text = email
-        }
-    }
+//    @objc
+//    private func handleSetRoot(nt: Notification) {
+//        if let userInfo = nt.userInfo, let email = userInfo["email"] as? String {
+//            self.emailLAbel.text = email
+//        }
+//    }
 
 }
 

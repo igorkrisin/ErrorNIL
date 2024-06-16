@@ -1,3 +1,10 @@
-import Cocoa
+var arrayXibName: Array = ["CustomViewOne", "CustomViewTwo", "CustomViewThree"]
+var customVar: String = ""
 
-var greeting = "Hello, playground"
+for index in arrayXibName {
+
+    if index == "CustomViewThree" {
+        customVar = index
+    }
+}
+print(customVar)

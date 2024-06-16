@@ -18,6 +18,10 @@ class CharacterCollectionViewCell: UICollectionViewCell {
         return $0
     }(UIImageView(frame: bounds))
     
+    lazy var nameCharacterLabel: UILabel = {
+        return $0
+    }(UILabel())
+    
     override func prepareForReuse() {
         imageView.image = nil
     }
@@ -30,10 +34,10 @@ class CharacterCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupCell(item: ResultsCharacter) {
+    func setupCell(item: String) {
         //print("item.image: ", item.image)
         addSubview(imageView)
-        imageView.load(url: URL(string: item.image ?? "")!)
+        imageView.load(url: URL(string: item)!)
     }
     
 }

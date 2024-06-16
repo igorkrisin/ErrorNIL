@@ -8,22 +8,33 @@
 import UIKit
 
 class NoteViewController: UIViewController {
+    
+    lazy var barButton: UIBarButtonItem = {
+        return $0
+    }(UIBarButtonItem(image: .actions, style: .plain, target: self, action: #selector(addBtnAction)))
+    
+    lazy private var alertController: UIAlertController = { alert in
+        alert.addTextField { field in
+            field.placeholder = "note"
+            
+        }
+        
+        alert.addAction(UIAlertAction(title: "Добавить", style: .default, handler: { _ in
+            let textField = alert.textFields?[0].text
+        }))
+        return alert
+    }(UIAlertController(title: "Записать заметку", message:  "Добавить новую заметку", preferredStyle: .alert))
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .black
+        
+        navigationItem.rightBarButtonItem = barButton
+       
+    }
+      
+    @objc func addBtnAction() {
+        present(alertController, animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

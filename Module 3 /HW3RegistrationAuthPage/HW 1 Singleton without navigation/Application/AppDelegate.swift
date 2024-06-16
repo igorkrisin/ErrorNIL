@@ -1,11 +1,13 @@
 //
 //  AppDelegate.swift
-//  HW3RegistrationAuthPage
+//  HW 1 Singleton without navigation
 //
-//  Created by Игорь Крысин on 08.06.2024.
+//  Created by Игорь Крысин on 26.05.2024.
 //
 
 import UIKit
+
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 

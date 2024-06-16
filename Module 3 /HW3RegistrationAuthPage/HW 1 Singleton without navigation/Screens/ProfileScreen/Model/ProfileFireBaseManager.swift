@@ -15,6 +15,26 @@ class ProfileFireBaseManager {
         Auth.auth().currentUser?.uid ?? ""
     }
     
+    func loadavatarUrl(completion: @escaping (Result<URL, Error>) -> Void) {
+        Firestore.firestore()
+            .collection("users")
+            .document(getUID())
+            .getDocument { snap, err in
+                guard err == nil else {
+                    completion(.failure(err!))
+                    return
+                }
+                
+                if let document = snap {
+                    
+                    if let urlString = document["avatarUrl"] as? String,
+                       let url = URL(string: urlString) {
+                        completion(.success(url))
+                    }
+                }
+            }
+    }
+    
     func uploadImage(imageData: Data) {
         let imageName = UUID().uuidString + ".jpeg"
         let reference = Storage.storage().reference().child(getUID() + "/avatars/").child(imageName)
@@ -35,7 +55,8 @@ class ProfileFireBaseManager {
         Firestore.firestore()
             .collection("users")
             .document(getUID())
-            .setData(["avatarUrl":urlString], merge: true)
+            //.setData(["avatarUrl":urlString], merge: true)
+            .updateData(["avatarUrl":urlString])
             
     }
     

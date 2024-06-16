@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  HW3RegistrationAuthPage
+//  HW 1 Singleton without navigation
 //
-//  Created by Игорь Крысин on 08.06.2024.
+//  Created by Игорь Крысин on 26.05.2024.
 //
 
 import UIKit
@@ -10,13 +10,36 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    private let appModel: AppModel = AppModel()
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        NotificationCenter.default.addObserver(self, selector: #selector(setRootVC(nt: )), name: NSNotification.Name("setRoot"), object: nil)
+        
+        guard let scene = (scene as? UIWindowScene) else { return }
+        self.window = UIWindow(windowScene: scene)
+        //self.window?.rootViewController = RegistrationViewController()
+        self.window?.makeKeyAndVisible()
+        
+        if appModel.isUserLogin() {
+            self.window?.rootViewController = UINavigationController(rootViewController: ProfileController())
+        } else {
+            self.window?.rootViewController = AuthVC()
+        }
+        
+    }
+    @objc
+    func setRootVC(nt: Notification) {
+        guard let vc = nt.userInfo?["vc"] as? String else { return }
+        
+        switch vc {
+        case "auth":
+            self.window?.rootViewController = AuthVC()
+        case "profile":
+            self.window?.rootViewController = UINavigationController(rootViewController: ProfileController())
+        default:
+            self.window?.rootViewController = RegistrationViewController()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

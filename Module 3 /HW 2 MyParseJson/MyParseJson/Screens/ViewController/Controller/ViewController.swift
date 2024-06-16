@@ -48,13 +48,11 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: EpisodeCell.reuseId, for: indexPath) as! EpisodeCell
         cell.setupCell(item: resultsData[indexPath.row])
         
-        print(resultsData[indexPath.row].characters)
-        
         let item = resultsData[indexPath.row]
         cell.completion = {
             let vc = CharacterViewController()
             vc.resultData = item
-            vc.idForCell = self.resultsData[indexPath.row].id
+            vc.idEpisode = self.resultsData[indexPath.row].id
             self.navigationController?.pushViewController(vc, animated: true)
         }
         return cell

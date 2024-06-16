@@ -7,11 +7,6 @@
 
 import Foundation
 
-struct InfoCharacters: Decodable {
-    let results: [ResultsCharacter]
-    
-}
-
 
 struct ResultsCharacter: Decodable {
     let image: String?

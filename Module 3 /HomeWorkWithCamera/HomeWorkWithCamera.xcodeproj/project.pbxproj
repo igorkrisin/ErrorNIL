@@ -7,25 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C520DE4D2C4C003800672EF1 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C520DE4C2C4C003800672EF1 /* StorageManager.swift */; };
 		C59696142C3DC0DD00CC2002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59696132C3DC0DD00CC2002 /* AppDelegate.swift */; };
 		C59696162C3DC0DD00CC2002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59696152C3DC0DD00CC2002 /* SceneDelegate.swift */; };
-		C59696182C3DC0DD00CC2002 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59696172C3DC0DD00CC2002 /* ViewController.swift */; };
-		C596961B2C3DC0DD00CC2002 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C596961A2C3DC0DD00CC2002 /* Base */; };
+		C59696182C3DC0DD00CC2002 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59696172C3DC0DD00CC2002 /* CameraVC.swift */; };
 		C596961E2C3DC0DD00CC2002 /* HomeWorkWithCamera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C596961C2C3DC0DD00CC2002 /* HomeWorkWithCamera.xcdatamodeld */; };
 		C59696202C3DC0DF00CC2002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C596961F2C3DC0DF00CC2002 /* Assets.xcassets */; };
 		C59696232C3DC0DF00CC2002 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C59696222C3DC0DF00CC2002 /* Base */; };
+		C59696382C42AE1600CC2002 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59696372C42AE1600CC2002 /* MainVC.swift */; };
+		C596963A2C42AFF200CC2002 /* MainCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59696392C42AFF100CC2002 /* MainCollectionModel.swift */; };
+		C596963E2C42BAD400CC2002 /* MainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C596963D2C42BAD400CC2002 /* MainItem.swift */; };
+		C59696442C42E16300CC2002 /* CreateNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59696432C42E16300CC2002 /* CreateNoteVC.swift */; };
+		C596964A2C43A8FB00CC2002 /* Tag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59696462C43A8FB00CC2002 /* Tag+CoreDataClass.swift */; };
+		C596964C2C43A8FB00CC2002 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59696482C43A8FB00CC2002 /* Note+CoreDataClass.swift */; };
+		C59696502C43A9D300CC2002 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C596964F2C43A9D300CC2002 /* CoreDataManager.swift */; };
+		C59696552C46FBA000CC2002 /* CreateTagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59696542C46FBA000CC2002 /* CreateTagVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C520DE4C2C4C003800672EF1 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		C59696102C3DC0DD00CC2002 /* HomeWorkWithCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkWithCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59696132C3DC0DD00CC2002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C59696152C3DC0DD00CC2002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C59696172C3DC0DD00CC2002 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C596961A2C3DC0DD00CC2002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C59696172C3DC0DD00CC2002 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		C596961D2C3DC0DD00CC2002 /* HomeWorkWithCamera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeWorkWithCamera.xcdatamodel; sourceTree = "<group>"; };
 		C596961F2C3DC0DF00CC2002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C59696222C3DC0DF00CC2002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C59696242C3DC0DF00CC2002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C59696372C42AE1600CC2002 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C59696392C42AFF100CC2002 /* MainCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionModel.swift; sourceTree = "<group>"; };
+		C596963D2C42BAD400CC2002 /* MainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItem.swift; sourceTree = "<group>"; };
+		C59696432C42E16300CC2002 /* CreateNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteVC.swift; sourceTree = "<group>"; };
+		C59696462C43A8FB00CC2002 /* Tag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C59696482C43A8FB00CC2002 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C596964F2C43A9D300CC2002 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C59696542C46FBA000CC2002 /* CreateTagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTagVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +55,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C520DE4B2C4C001900672EF1 /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				C520DE4C2C4C003800672EF1 /* StorageManager.swift */,
+			);
+			path = StorageManager;
+			sourceTree = "<group>";
+		};
 		C59696072C3DC0DD00CC2002 = {
 			isa = PBXGroup;
 			children = (
+				C520DE4B2C4C001900672EF1 /* StorageManager */,
 				C59696122C3DC0DD00CC2002 /* HomeWorkWithCamera */,
 				C59696112C3DC0DD00CC2002 /* Products */,
 			);
@@ -58,16 +83,191 @@
 		C59696122C3DC0DD00CC2002 /* HomeWorkWithCamera */ = {
 			isa = PBXGroup;
 			children = (
-				C59696132C3DC0DD00CC2002 /* AppDelegate.swift */,
-				C59696152C3DC0DD00CC2002 /* SceneDelegate.swift */,
-				C59696172C3DC0DD00CC2002 /* ViewController.swift */,
-				C59696192C3DC0DD00CC2002 /* Main.storyboard */,
-				C596961F2C3DC0DF00CC2002 /* Assets.xcassets */,
-				C59696212C3DC0DF00CC2002 /* LaunchScreen.storyboard */,
-				C59696242C3DC0DF00CC2002 /* Info.plist */,
-				C596961C2C3DC0DD00CC2002 /* HomeWorkWithCamera.xcdatamodeld */,
+				C596962E2C3EF87500CC2002 /* Screens */,
+				C596962B2C3DC23E00CC2002 /* DataBase */,
+				C596962A2C3DC21100CC2002 /* Application */,
+				C596962C2C3DC2A600CC2002 /* Resourses */,
+				C596962D2C3DC2BB00CC2002 /* SupportingFiles */,
 			);
 			path = HomeWorkWithCamera;
+			sourceTree = "<group>";
+		};
+		C596962A2C3DC21100CC2002 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C59696132C3DC0DD00CC2002 /* AppDelegate.swift */,
+				C59696152C3DC0DD00CC2002 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C596962B2C3DC23E00CC2002 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				C596964E2C43A99A00CC2002 /* Manager */,
+				C59696452C43A8D100CC2002 /* Model */,
+				C596961C2C3DC0DD00CC2002 /* HomeWorkWithCamera.xcdatamodeld */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		C596962C2C3DC2A600CC2002 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				C596961F2C3DC0DF00CC2002 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		C596962D2C3DC2BB00CC2002 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C59696212C3DC0DF00CC2002 /* LaunchScreen.storyboard */,
+				C59696242C3DC0DF00CC2002 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C596962E2C3EF87500CC2002 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C59696522C46FB7900CC2002 /* CreateTagSheet */,
+				C596963F2C42E12D00CC2002 /* CreateNoteScreen */,
+				C59696332C42ADC100CC2002 /* MainScreen */,
+				C59696302C3EF88F00CC2002 /* CameraScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C596962F2C3EF88300CC2002 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C59696172C3DC0DD00CC2002 /* CameraVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C59696302C3EF88F00CC2002 /* CameraScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C59696322C3EF8A700CC2002 /* Model */,
+				C59696312C3EF89E00CC2002 /* View */,
+				C596962F2C3EF88300CC2002 /* Controller */,
+			);
+			path = CameraScreen;
+			sourceTree = "<group>";
+		};
+		C59696312C3EF89E00CC2002 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C59696322C3EF8A700CC2002 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C59696332C42ADC100CC2002 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C59696362C42ADF500CC2002 /* Model */,
+				C59696352C42ADE900CC2002 /* View */,
+				C59696342C42ADDA00CC2002 /* Controller */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		C59696342C42ADDA00CC2002 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C59696372C42AE1600CC2002 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C59696352C42ADE900CC2002 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C596963D2C42BAD400CC2002 /* MainItem.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C59696362C42ADF500CC2002 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C59696392C42AFF100CC2002 /* MainCollectionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C596963F2C42E12D00CC2002 /* CreateNoteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C59696422C42E14C00CC2002 /* Model */,
+				C59696412C42E14700CC2002 /* View */,
+				C59696402C42E13E00CC2002 /* Controller */,
+			);
+			path = CreateNoteScreen;
+			sourceTree = "<group>";
+		};
+		C59696402C42E13E00CC2002 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C59696432C42E16300CC2002 /* CreateNoteVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C59696412C42E14700CC2002 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C59696422C42E14C00CC2002 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C59696452C43A8D100CC2002 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C59696462C43A8FB00CC2002 /* Tag+CoreDataClass.swift */,
+				C59696482C43A8FB00CC2002 /* Note+CoreDataClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C596964E2C43A99A00CC2002 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C596964F2C43A9D300CC2002 /* CoreDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C59696522C46FB7900CC2002 /* CreateTagSheet */ = {
+			isa = PBXGroup;
+			children = (
+				C59696532C46FB8B00CC2002 /* Controller */,
+			);
+			path = CreateTagSheet;
+			sourceTree = "<group>";
+		};
+		C59696532C46FB8B00CC2002 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C59696542C46FBA000CC2002 /* CreateTagVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +330,6 @@
 			files = (
 				C59696202C3DC0DF00CC2002 /* Assets.xcassets in Resources */,
 				C59696232C3DC0DF00CC2002 /* Base in Resources */,
-				C596961B2C3DC0DD00CC2002 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +340,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59696442C42E16300CC2002 /* CreateNoteVC.swift in Sources */,
+				C59696552C46FBA000CC2002 /* CreateTagVC.swift in Sources */,
 				C596961E2C3DC0DD00CC2002 /* HomeWorkWithCamera.xcdatamodeld in Sources */,
-				C59696182C3DC0DD00CC2002 /* ViewController.swift in Sources */,
+				C59696382C42AE1600CC2002 /* MainVC.swift in Sources */,
+				C59696182C3DC0DD00CC2002 /* CameraVC.swift in Sources */,
 				C59696142C3DC0DD00CC2002 /* AppDelegate.swift in Sources */,
+				C596964A2C43A8FB00CC2002 /* Tag+CoreDataClass.swift in Sources */,
+				C596964C2C43A8FB00CC2002 /* Note+CoreDataClass.swift in Sources */,
+				C596963A2C42AFF200CC2002 /* MainCollectionModel.swift in Sources */,
 				C59696162C3DC0DD00CC2002 /* SceneDelegate.swift in Sources */,
+				C596963E2C42BAD400CC2002 /* MainItem.swift in Sources */,
+				C59696502C43A9D300CC2002 /* CoreDataManager.swift in Sources */,
+				C520DE4D2C4C003800672EF1 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C59696192C3DC0DD00CC2002 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C596961A2C3DC0DD00CC2002 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C59696212C3DC0DF00CC2002 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -298,10 +498,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U2S6URFDMC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWorkWithCamera/Info.plist;
+				INFOPLIST_FILE = HomeWorkWithCamera/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "fdsfsffd sdfsd";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "sdasd выавыа ";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Разрешить доступ к галерее";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,10 +528,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U2S6URFDMC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWorkWithCamera/Info.plist;
+				INFOPLIST_FILE = HomeWorkWithCamera/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "fdsfsffd sdfsd";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "sdasd выавыа ";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Разрешить доступ к галерее";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

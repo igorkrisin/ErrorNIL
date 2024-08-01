@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class MainVC: UIViewController {
+class CameraVC: UIViewController {
     
     var session: AVCaptureSession = AVCaptureSession()
     var preview: AVCaptureVideoPreviewLayer!
@@ -77,7 +77,7 @@ class MainVC: UIViewController {
 
 }
 
-extension MainVC: AVCapturePhotoCaptureDelegate {
+extension CameraVC: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: (any Error)?) {
         guard let data = photo.fileDataRepresentation() else {
             return
@@ -87,6 +87,9 @@ extension MainVC: AVCapturePhotoCaptureDelegate {
             self.photoPreview.image = image
             
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            let createNoteVC = CreateNoteVC()
+            createNoteVC.image = UIImage(data: data)
+            navigationController?.pushViewController(createNoteVC, animated: true)
         }
     }
 }

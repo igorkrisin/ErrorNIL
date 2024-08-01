@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
     lazy var tableView: UITableView = {
         $0.register(UITableViewCell.self, forCellReuseIdentifier: "tableCell")
         $0.dataSource = self
-        $0.delegate = self
+        $0.delegate = selfесли кнопка вызывает sheet, а мне нудно узнать ее index path, как это можно сделать?
         return $0
     }(UITableView(frame: view.frame, style: .insetGrouped))
 

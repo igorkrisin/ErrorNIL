@@ -9,30 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @EnvironmentObject var appVM: AppViewModel
-    
-    var items: [String] = ["1", "2", "3"]
+    @StateObject var contentViewModel = AppViewModel()
     
     var body: some View {
         VStack {
-            Text("first")
-            Button {
-                appVM.isInOnline = false
-            } label: {
-                Text("Next view")
+            ScrollView {
+                LazyVStack {
+                    ForEach(contentViewModel.nameSerias, id: \.id) { item in
+                        Text(item.name ?? "")
+                    }
+                }
             }
-            NavigationLink {
-                ThirdView()
-                   
-            } label: {
-                Text("3rd view")
+            .onAppear{
+                contentViewModel.getName(q: "")
             }
         }
-        
-       
-
-
-        
     }
     
     @ViewBuilder

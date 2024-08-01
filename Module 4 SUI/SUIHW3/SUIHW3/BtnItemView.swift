@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct BtnItemView: View {
+    var item: ButtonModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button {
+            print("tag btn")
+        } label: {
+            Text(item.nameBtn)
+                .frame(maxHeight: 34)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 10)
+                .background(Color.gray)
+                .clipShape(.capsule)
+                .foregroundStyle(Color.white)
+            
+        }
+
     }
 }
 
-#Preview {
-    BtnItemView()
-}

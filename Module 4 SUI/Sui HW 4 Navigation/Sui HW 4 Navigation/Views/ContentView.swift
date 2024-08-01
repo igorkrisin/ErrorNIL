@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var arrayData: [TableItemModel] = TableItemModel.mokeData()
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack(alignment: .leading) {
+                Text("\(arrayData.count) предложений")
+                    .padding(.leading, 20)
+                ScrollView {
+                    VStack {
+                        ForEach(arrayData, id: \.id) {
+                            TableItem(itemModel: $0)
+                        }
+                        
+                    }
+                    .padding(.top, 20)
+                    .padding(.horizontal, 20)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
         }
-        .padding()
     }
 }
 

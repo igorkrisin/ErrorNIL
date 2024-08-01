@@ -11,6 +11,12 @@
 		C56424922C52955A0068685A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56424912C52955A0068685A /* ContentView.swift */; };
 		C56424942C52955B0068685A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56424932C52955B0068685A /* Assets.xcassets */; };
 		C56424972C52955B0068685A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56424962C52955B0068685A /* Preview Assets.xcassets */; };
+		C564249E2C5354EB0068685A /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C564249D2C5354EB0068685A /* ItemView.swift */; };
+		C56424A02C53554C0068685A /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C564249F2C53554C0068685A /* ItemModel.swift */; };
+		C56424A32C535BCE0068685A /* ButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56424A22C535BCE0068685A /* ButtonModel.swift */; };
+		C56424A52C535CF90068685A /* BtnItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56424A42C535CF90068685A /* BtnItemView.swift */; };
+		C56424A72C53ED710068685A /* DescriptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56424A62C53ED710068685A /* DescriptionItem.swift */; };
+		C56424A92C53ED990068685A /* DescriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56424A82C53ED990068685A /* DescriptionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		C56424912C52955A0068685A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C56424932C52955B0068685A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C56424962C52955B0068685A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C564249D2C5354EB0068685A /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		C564249F2C53554C0068685A /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		C56424A22C535BCE0068685A /* ButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModel.swift; sourceTree = "<group>"; };
+		C56424A42C535CF90068685A /* BtnItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnItemView.swift; sourceTree = "<group>"; };
+		C56424A62C53ED710068685A /* DescriptionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionItem.swift; sourceTree = "<group>"; };
+		C56424A82C53ED990068685A /* DescriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				C564248F2C52955A0068685A /* SUIHW3App.swift */,
 				C56424912C52955A0068685A /* ContentView.swift */,
+				C564249D2C5354EB0068685A /* ItemView.swift */,
+				C564249F2C53554C0068685A /* ItemModel.swift */,
+				C56424A22C535BCE0068685A /* ButtonModel.swift */,
+				C56424A42C535CF90068685A /* BtnItemView.swift */,
+				C56424A62C53ED710068685A /* DescriptionItem.swift */,
+				C56424A82C53ED990068685A /* DescriptionModel.swift */,
 				C56424932C52955B0068685A /* Assets.xcassets */,
 				C56424952C52955B0068685A /* Preview Content */,
 			);
@@ -138,6 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C56424922C52955A0068685A /* ContentView.swift in Sources */,
+				C564249E2C5354EB0068685A /* ItemView.swift in Sources */,
+				C56424A72C53ED710068685A /* DescriptionItem.swift in Sources */,
+				C56424A32C535BCE0068685A /* ButtonModel.swift in Sources */,
+				C56424A02C53554C0068685A /* ItemModel.swift in Sources */,
+				C56424A52C535CF90068685A /* BtnItemView.swift in Sources */,
+				C56424A92C53ED990068685A /* DescriptionModel.swift in Sources */,
 				C56424902C52955A0068685A /* SUIHW3App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

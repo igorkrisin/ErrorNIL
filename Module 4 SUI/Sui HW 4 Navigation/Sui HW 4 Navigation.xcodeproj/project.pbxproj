@@ -11,6 +11,10 @@
 		C56424B92C565E9A0068685A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56424B82C565E9A0068685A /* ContentView.swift */; };
 		C56424BB2C565E9C0068685A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56424BA2C565E9C0068685A /* Assets.xcassets */; };
 		C56424BE2C565E9C0068685A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56424BD2C565E9C0068685A /* Preview Assets.xcassets */; };
+		C56424CC2C5660570068685A /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56424CB2C5660570068685A /* TableItem.swift */; };
+		C56424CF2C56607A0068685A /* TableItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56424CE2C56607A0068685A /* TableItemModel.swift */; };
+		C56424D12C566E3D0068685A /* DescriptionAppartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56424D02C566E3D0068685A /* DescriptionAppartItem.swift */; };
+		C56424D72C582D040068685A /* CardAppartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56424D62C582D040068685A /* CardAppartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		C56424B82C565E9A0068685A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C56424BA2C565E9C0068685A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C56424BD2C565E9C0068685A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C56424CB2C5660570068685A /* TableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItem.swift; sourceTree = "<group>"; };
+		C56424CE2C56607A0068685A /* TableItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItemModel.swift; sourceTree = "<group>"; };
+		C56424D02C566E3D0068685A /* DescriptionAppartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionAppartItem.swift; sourceTree = "<group>"; };
+		C56424D62C582D040068685A /* CardAppartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAppartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				C56424B62C565E9A0068685A /* Sui_HW_4_NavigationApp.swift */,
-				C56424B82C565E9A0068685A /* ContentView.swift */,
+				C56424CD2C5660660068685A /* Models */,
+				C56424CA2C56602A0068685A /* Items */,
+				C56424C92C565FE10068685A /* Views */,
 				C56424BA2C565E9C0068685A /* Assets.xcassets */,
 				C56424BC2C565E9C0068685A /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				C56424BD2C565E9C0068685A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C56424C92C565FE10068685A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C56424B82C565E9A0068685A /* ContentView.swift */,
+				C56424D62C582D040068685A /* CardAppartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C56424CA2C56602A0068685A /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				C56424CB2C5660570068685A /* TableItem.swift */,
+				C56424D02C566E3D0068685A /* DescriptionAppartItem.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		C56424CD2C5660660068685A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C56424CE2C56607A0068685A /* TableItemModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C56424B92C565E9A0068685A /* ContentView.swift in Sources */,
+				C56424CC2C5660570068685A /* TableItem.swift in Sources */,
 				C56424B72C565E9A0068685A /* Sui_HW_4_NavigationApp.swift in Sources */,
+				C56424CF2C56607A0068685A /* TableItemModel.swift in Sources */,
+				C56424D72C582D040068685A /* CardAppartView.swift in Sources */,
+				C56424D12C566E3D0068685A /* DescriptionAppartItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

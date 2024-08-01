@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ObserverLessonApp: App {
+    
+    @StateObject var appViewModel = AppViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
         }
     }
 }

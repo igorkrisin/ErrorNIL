@@ -11,6 +11,7 @@ struct RegistrationModel {
     var captionLabel: String
     var acceptPrivacy: String
     var haveAccountLabel: String
+
     
     static func makeData() -> RegistrationModel {
         RegistrationModel(captionLabel: "Регистрация", acceptPrivacy: "Я согласен с Условиями предоставления услуг и Политикой конфиденциальности", haveAccountLabel: "Уже есть аккаунт?")

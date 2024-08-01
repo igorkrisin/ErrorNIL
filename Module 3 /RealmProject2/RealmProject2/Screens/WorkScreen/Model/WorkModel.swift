@@ -1,8 +1,21 @@
-//
-//  WorkModel.swift
-//  RealmProject2
-//
-//  Created by Игорь Крысин on 28.06.2024.
-//
-
 import Foundation
+import RealmSwift
+
+struct WorkModel: Identifiable {
+    var id: String = UUID().uuidString
+    var captionName: String
+    var descriptionName: String
+    var image: String?
+    
+    
+    static func mokeData() -> [WorkModel] {
+        []
+    }
+}
+
+class NoteModel: Object {
+    @Persisted(primaryKey: true) var id: String = UUID().uuidString
+    @Persisted var captionName: String = ""
+    @Persisted var descriptionName: String = ""
+    @Persisted var image: String = ""
+}

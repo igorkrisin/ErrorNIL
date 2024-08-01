@@ -1,0 +1,8 @@
+//
+//  WorkModel.swift
+//  RealmProject2
+//
+//  Created by Игорь Крысин on 28.06.2024.
+//
+
+import Foundation

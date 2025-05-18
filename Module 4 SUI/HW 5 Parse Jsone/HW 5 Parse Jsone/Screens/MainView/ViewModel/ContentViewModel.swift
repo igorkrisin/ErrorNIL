@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class ContentViewModel: ObservableObject {
+    @Published var arrayData: [Results] = []
+    
+    private let networkManager = NetworkService()
+    
+    func getPosts(page: String, q: String) {
+        networkManager.sendRequest(page: page, query: q) { results in
+            self.arrayData = results
+        }
+    }
+}

@@ -7,38 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C51FA79D2C60E403009EFBC1 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51FA79C2C60E403009EFBC1 /* TaskItemView.swift */; };
-		C56801D92C5F56B8005873F7 /* HW_6_task_LISTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801D82C5F56B8005873F7 /* HW_6_task_LISTApp.swift */; };
-		C56801DB2C5F56B8005873F7 /* ListContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801DA2C5F56B8005873F7 /* ListContentView.swift */; };
-		C56801DD2C5F56BA005873F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56801DC2C5F56BA005873F7 /* Assets.xcassets */; };
-		C56801E02C5F56BA005873F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56801DF2C5F56BA005873F7 /* Preview Assets.xcassets */; };
-		C56801EB2C5F58CD005873F7 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801EA2C5F58CD005873F7 /* TaskModel.swift */; };
-		C56801ED2C5F5F02005873F7 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801EC2C5F5F02005873F7 /* ListItemView.swift */; };
-		C56801F02C5F66DF005873F7 /* ListContentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801EF2C5F66DF005873F7 /* ListContentVM.swift */; };
-		C56801F22C5FAC9E005873F7 /* ItemTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801F12C5FAC9E005873F7 /* ItemTaskModel.swift */; };
-		C56801F42C5FB33F005873F7 /* ListTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801F32C5FB33F005873F7 /* ListTaskItemView.swift */; };
-		C56801F62C5FB6B4005873F7 /* TaskContentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801F52C5FB6B4005873F7 /* TaskContentVM.swift */; };
-		C56801F82C5FCD3F005873F7 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801F72C5FCD3F005873F7 /* SheetView.swift */; };
+		C56801B12C5B7451005873F7 /* HW_5_Parse_JsoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801B02C5B7451005873F7 /* HW_5_Parse_JsoneApp.swift */; };
+		C56801B32C5B7451005873F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801B22C5B7451005873F7 /* ContentView.swift */; };
+		C56801B52C5B7452005873F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56801B42C5B7452005873F7 /* Assets.xcassets */; };
+		C56801B82C5B7452005873F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56801B72C5B7452005873F7 /* Preview Assets.xcassets */; };
+		C56801C32C5BA02A005873F7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801C22C5BA02A005873F7 /* NetworkService.swift */; };
+		C56801C62C5D629A005873F7 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801C52C5D629A005873F7 /* ImageModel.swift */; };
+		C56801C82C5D6A44005873F7 /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801C72C5D6A44005873F7 /* ImageItem.swift */; };
+		C56801CB2C5E3362005873F7 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56801CA2C5E3362005873F7 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C51FA79C2C60E403009EFBC1 /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
-		C56801D52C5F56B8005873F7 /* HW 6 task LIST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW 6 task LIST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C56801D82C5F56B8005873F7 /* HW_6_task_LISTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW_6_task_LISTApp.swift; sourceTree = "<group>"; };
-		C56801DA2C5F56B8005873F7 /* ListContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContentView.swift; sourceTree = "<group>"; };
-		C56801DC2C5F56BA005873F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C56801DF2C5F56BA005873F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C56801EA2C5F58CD005873F7 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
-		C56801EC2C5F5F02005873F7 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
-		C56801EF2C5F66DF005873F7 /* ListContentVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContentVM.swift; sourceTree = "<group>"; };
-		C56801F12C5FAC9E005873F7 /* ItemTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTaskModel.swift; sourceTree = "<group>"; };
-		C56801F32C5FB33F005873F7 /* ListTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTaskItemView.swift; sourceTree = "<group>"; };
-		C56801F52C5FB6B4005873F7 /* TaskContentVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskContentVM.swift; sourceTree = "<group>"; };
-		C56801F72C5FCD3F005873F7 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		C56801AD2C5B7451005873F7 /* HW 5 Parse Jsone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW 5 Parse Jsone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56801B02C5B7451005873F7 /* HW_5_Parse_JsoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW_5_Parse_JsoneApp.swift; sourceTree = "<group>"; };
+		C56801B22C5B7451005873F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C56801B42C5B7452005873F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C56801B72C5B7452005873F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C56801C22C5BA02A005873F7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C56801C52C5D629A005873F7 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		C56801C72C5D6A44005873F7 /* ImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
+		C56801CA2C5E3362005873F7 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C56801D22C5F56B8005873F7 /* Frameworks */ = {
+		C56801AA2C5B7451005873F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,117 +40,129 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C51FA79B2C60B916009EFBC1 /* ItemView */ = {
+		C56801A42C5B7451005873F7 = {
 			isa = PBXGroup;
 			children = (
-				C56801EC2C5F5F02005873F7 /* ListItemView.swift */,
-				C51FA79C2C60E403009EFBC1 /* TaskItemView.swift */,
-			);
-			path = ItemView;
-			sourceTree = "<group>";
-		};
-		C56801CC2C5F56B8005873F7 = {
-			isa = PBXGroup;
-			children = (
-				C56801D72C5F56B8005873F7 /* HW 6 task LIST */,
-				C56801D62C5F56B8005873F7 /* Products */,
+				C56801AF2C5B7451005873F7 /* HW 5 Parse Jsone */,
+				C56801AE2C5B7451005873F7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C56801D62C5F56B8005873F7 /* Products */ = {
+		C56801AE2C5B7451005873F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C56801D52C5F56B8005873F7 /* HW 6 task LIST.app */,
+				C56801AD2C5B7451005873F7 /* HW 5 Parse Jsone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C56801D72C5F56B8005873F7 /* HW 6 task LIST */ = {
+		C56801AF2C5B7451005873F7 /* HW 5 Parse Jsone */ = {
 			isa = PBXGroup;
 			children = (
-				C56801E92C5F589A005873F7 /* Views */,
-				C56801E82C5F582D005873F7 /* ViewModels */,
-				C56801E72C5F5816005873F7 /* Models */,
-				C56801D82C5F56B8005873F7 /* HW_6_task_LISTApp.swift */,
-				C56801DC2C5F56BA005873F7 /* Assets.xcassets */,
-				C56801DE2C5F56BA005873F7 /* Preview Content */,
+				C56801C12C5B9FFB005873F7 /* Service */,
+				C56801BE2C5B9FCB005873F7 /* Screens */,
+				C56801B02C5B7451005873F7 /* HW_5_Parse_JsoneApp.swift */,
+				C56801B42C5B7452005873F7 /* Assets.xcassets */,
+				C56801B62C5B7452005873F7 /* Preview Content */,
 			);
-			path = "HW 6 task LIST";
+			path = "HW 5 Parse Jsone";
 			sourceTree = "<group>";
 		};
-		C56801DE2C5F56BA005873F7 /* Preview Content */ = {
+		C56801B62C5B7452005873F7 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				C56801DF2C5F56BA005873F7 /* Preview Assets.xcassets */,
+				C56801B72C5B7452005873F7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C56801E72C5F5816005873F7 /* Models */ = {
+		C56801BE2C5B9FCB005873F7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				C56801EA2C5F58CD005873F7 /* TaskModel.swift */,
-				C56801F12C5FAC9E005873F7 /* ItemTaskModel.swift */,
+				C56801BF2C5B9FD4005873F7 /* MainView */,
 			);
-			path = Models;
+			path = Screens;
 			sourceTree = "<group>";
 		};
-		C56801E82C5F582D005873F7 /* ViewModels */ = {
+		C56801BF2C5B9FD4005873F7 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				C56801EF2C5F66DF005873F7 /* ListContentVM.swift */,
-				C56801F52C5FB6B4005873F7 /* TaskContentVM.swift */,
+				C56801C42C5CC19C005873F7 /* Model */,
+				C56801C02C5B9FDA005873F7 /* View */,
+				C56801C92C5D6A4C005873F7 /* ViewModel */,
 			);
-			path = ViewModels;
+			path = MainView;
 			sourceTree = "<group>";
 		};
-		C56801E92C5F589A005873F7 /* Views */ = {
+		C56801C02C5B9FDA005873F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C51FA79B2C60B916009EFBC1 /* ItemView */,
-				C56801DA2C5F56B8005873F7 /* ListContentView.swift */,
-				C56801F32C5FB33F005873F7 /* ListTaskItemView.swift */,
-				C56801F72C5FCD3F005873F7 /* SheetView.swift */,
+				C56801B22C5B7451005873F7 /* ContentView.swift */,
+				C56801C72C5D6A44005873F7 /* ImageItem.swift */,
 			);
-			path = Views;
+			path = View;
+			sourceTree = "<group>";
+		};
+		C56801C12C5B9FFB005873F7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C56801C22C5BA02A005873F7 /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C56801C42C5CC19C005873F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C56801C52C5D629A005873F7 /* ImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C56801C92C5D6A4C005873F7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C56801CA2C5E3362005873F7 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C56801D42C5F56B8005873F7 /* HW 6 task LIST */ = {
+		C56801AC2C5B7451005873F7 /* HW 5 Parse Jsone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C56801E32C5F56BA005873F7 /* Build configuration list for PBXNativeTarget "HW 6 task LIST" */;
+			buildConfigurationList = C56801BB2C5B7452005873F7 /* Build configuration list for PBXNativeTarget "HW 5 Parse Jsone" */;
 			buildPhases = (
-				C56801D12C5F56B8005873F7 /* Sources */,
-				C56801D22C5F56B8005873F7 /* Frameworks */,
-				C56801D32C5F56B8005873F7 /* Resources */,
+				C56801A92C5B7451005873F7 /* Sources */,
+				C56801AA2C5B7451005873F7 /* Frameworks */,
+				C56801AB2C5B7451005873F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "HW 6 task LIST";
-			productName = "HW 6 task LIST";
-			productReference = C56801D52C5F56B8005873F7 /* HW 6 task LIST.app */;
+			name = "HW 5 Parse Jsone";
+			productName = "HW 5 Parse Jsone";
+			productReference = C56801AD2C5B7451005873F7 /* HW 5 Parse Jsone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C56801CD2C5F56B8005873F7 /* Project object */ = {
+		C56801A52C5B7451005873F7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					C56801D42C5F56B8005873F7 = {
+					C56801AC2C5B7451005873F7 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = C56801D02C5F56B8005873F7 /* Build configuration list for PBXProject "HW 6 task LIST" */;
+			buildConfigurationList = C56801A82C5B7451005873F7 /* Build configuration list for PBXProject "HW 5 Parse Jsone" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,50 +170,46 @@
 				en,
 				Base,
 			);
-			mainGroup = C56801CC2C5F56B8005873F7;
-			productRefGroup = C56801D62C5F56B8005873F7 /* Products */;
+			mainGroup = C56801A42C5B7451005873F7;
+			productRefGroup = C56801AE2C5B7451005873F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C56801D42C5F56B8005873F7 /* HW 6 task LIST */,
+				C56801AC2C5B7451005873F7 /* HW 5 Parse Jsone */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C56801D32C5F56B8005873F7 /* Resources */ = {
+		C56801AB2C5B7451005873F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C56801E02C5F56BA005873F7 /* Preview Assets.xcassets in Resources */,
-				C56801DD2C5F56BA005873F7 /* Assets.xcassets in Resources */,
+				C56801B82C5B7452005873F7 /* Preview Assets.xcassets in Resources */,
+				C56801B52C5B7452005873F7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C56801D12C5F56B8005873F7 /* Sources */ = {
+		C56801A92C5B7451005873F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C51FA79D2C60E403009EFBC1 /* TaskItemView.swift in Sources */,
-				C56801DB2C5F56B8005873F7 /* ListContentView.swift in Sources */,
-				C56801F82C5FCD3F005873F7 /* SheetView.swift in Sources */,
-				C56801EB2C5F58CD005873F7 /* TaskModel.swift in Sources */,
-				C56801D92C5F56B8005873F7 /* HW_6_task_LISTApp.swift in Sources */,
-				C56801F42C5FB33F005873F7 /* ListTaskItemView.swift in Sources */,
-				C56801F22C5FAC9E005873F7 /* ItemTaskModel.swift in Sources */,
-				C56801F02C5F66DF005873F7 /* ListContentVM.swift in Sources */,
-				C56801ED2C5F5F02005873F7 /* ListItemView.swift in Sources */,
-				C56801F62C5FB6B4005873F7 /* TaskContentVM.swift in Sources */,
+				C56801C82C5D6A44005873F7 /* ImageItem.swift in Sources */,
+				C56801B32C5B7451005873F7 /* ContentView.swift in Sources */,
+				C56801CB2C5E3362005873F7 /* ContentViewModel.swift in Sources */,
+				C56801C32C5BA02A005873F7 /* NetworkService.swift in Sources */,
+				C56801B12C5B7451005873F7 /* HW_5_Parse_JsoneApp.swift in Sources */,
+				C56801C62C5D629A005873F7 /* ImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C56801E12C5F56BA005873F7 /* Debug */ = {
+		C56801B92C5B7452005873F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -272,7 +272,7 @@
 			};
 			name = Debug;
 		};
-		C56801E22C5F56BA005873F7 /* Release */ = {
+		C56801BA2C5B7452005873F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -328,14 +328,14 @@
 			};
 			name = Release;
 		};
-		C56801E42C5F56BA005873F7 /* Debug */ = {
+		C56801BC2C5B7452005873F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HW 6 task LIST/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HW 5 Parse Jsone/Preview Content\"";
 				DEVELOPMENT_TEAM = U2S6URFDMC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -349,7 +349,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.igorKrysin.HW-6-task-LIST";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igorKrysin.HW-5-Parse-Jsone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,14 +357,14 @@
 			};
 			name = Debug;
 		};
-		C56801E52C5F56BA005873F7 /* Release */ = {
+		C56801BD2C5B7452005873F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HW 6 task LIST/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HW 5 Parse Jsone/Preview Content\"";
 				DEVELOPMENT_TEAM = U2S6URFDMC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -378,7 +378,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.igorKrysin.HW-6-task-LIST";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igorKrysin.HW-5-Parse-Jsone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -389,25 +389,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C56801D02C5F56B8005873F7 /* Build configuration list for PBXProject "HW 6 task LIST" */ = {
+		C56801A82C5B7451005873F7 /* Build configuration list for PBXProject "HW 5 Parse Jsone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C56801E12C5F56BA005873F7 /* Debug */,
-				C56801E22C5F56BA005873F7 /* Release */,
+				C56801B92C5B7452005873F7 /* Debug */,
+				C56801BA2C5B7452005873F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C56801E32C5F56BA005873F7 /* Build configuration list for PBXNativeTarget "HW 6 task LIST" */ = {
+		C56801BB2C5B7452005873F7 /* Build configuration list for PBXNativeTarget "HW 5 Parse Jsone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C56801E42C5F56BA005873F7 /* Debug */,
-				C56801E52C5F56BA005873F7 /* Release */,
+				C56801BC2C5B7452005873F7 /* Debug */,
+				C56801BD2C5B7452005873F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C56801CD2C5F56B8005873F7 /* Project object */;
+	rootObject = C56801A52C5B7451005873F7 /* Project object */;
 }

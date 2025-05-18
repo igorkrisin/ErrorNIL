@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct WebPage: View {
+    @State var isLoad: Bool = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .top) {
+            WebKitView(isLoad: $isLoad)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            HStack {
+                if isLoad {
+                    Text("loaded")
+                        .frame(height: 100)
+                        .padding(.top, 20)
+                } else {
+                    Text("loading")
+                        .frame(height: 100)
+                        .padding(.top, 20)
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .background(.white)
+        }
+        .ignoresSafeArea()
     }
 }
 

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ListTaskItemView: View {
+    
     @State var descrTask: String
     @State private var isSheetPresented = false
     
@@ -22,22 +23,8 @@ struct ListTaskItemView: View {
             ZStack (alignment: .bottomTrailing) {
                 Form {
                     
-                    ForEach(viewModel.descriptionTaskArray) { item in
-                        VStack(alignment: .leading, spacing: 10, content: {
-                            Text(item.description)
-                                .font(.system(size: 20, weight: .regular))
-                            HStack {
-                                Text("\(item.date)")
-                                    .font(.system(size: 16, weight: .light))
-                                Spacer()
-                                Button {
-                                    viewModel.deleteItemFromArray(task: item)
-                                } label: {
-                                    Image(systemName: "trash")
-                                }
-                                
-                            }
-                        })
+                    ForEach($viewModel.descriptionTaskArray) { item in
+                        TaskItemView(task: $task, description: item, taskVM: viewModel)
                         
                         
                         
@@ -58,10 +45,7 @@ struct ListTaskItemView: View {
                 }
                 .sheet(isPresented: $isSheetPresented, content: {
                     SheetView(textDescript: $descrTask)
-                        .onDisappear{
-                            print("cnGetData: ", viewModel.getData())
-                            viewModel.getData()
-                        }
+                        .environmentObject(viewModel)
                 })
 
             }

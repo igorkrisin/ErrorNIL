@@ -84,7 +84,7 @@ extension MainVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainItem.reusedId, for: indexPath) as! MainItem
-        //print("coreManager.notes[indexPath.row]:", coreManager.notes[indexPath.row].tag?.allObjects as? [Tag])
+        print("coreManager.notes[indexPath.row]:", coreManager.notes[indexPath.row].tag?.allObjects as? [Tag])
         guard let tags = coreManager.notes[indexPath.row].tag?.allObjects as? [Tag] else  { return cell }
         if  tags.count > 0 {
             let tag = tags[0]

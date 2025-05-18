@@ -8,11 +8,44 @@
 import SwiftUI
 
 struct TaskItemView: View {
+    
+    @Binding var task: TaskModel
+    @Binding var description: ItemTaskModel
+    
+    
+    @StateObject var taskVM: TaskContentVM
+    
+    
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 10, content: {
+            Text(description.description)
+                .font(.system(size: 20, weight: .regular))
+            HStack {
+                Button {
+                    task.isDone.toggle()
+                } label: {
+                    Image(systemName: "checkmark.circle")
+                }
+                .padding(.horizontal, 10)
+                .buttonStyle(BorderlessButtonStyle())
+                Text("\(description.date)")
+                    .font(.system(size: 16, weight: .light))
+                Spacer()
+                
+
+                Button {
+                  
+                    taskVM.deleteItemFromArray(task: description)
+                } label: {
+                    Image(systemName: "trash")
+                }
+                .buttonStyle(BorderlessButtonStyle())
+                
+            }
+        })
     }
 }
 
-#Preview {
-    TaskItemView()
-}
+

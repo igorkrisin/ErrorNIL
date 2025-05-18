@@ -10,6 +10,8 @@ import Foundation
 struct ImageModel: Decodable {
     let results: [Results]
     let total: Int
+    let total_pages: Int
+    
 }
 
 struct Results: Identifiable, Decodable {

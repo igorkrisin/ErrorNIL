@@ -20,14 +20,13 @@ struct TableItem: View {
             NavigationLink {
                 CardAppartView(itemModel: itemModel, image: itemModel.image, name: itemModel.name, price: itemModel.price, description: itemModel.description)
             } label: {
-                
-                
                 ZStack(alignment: .topTrailing) {
                     Image(itemModel.image)
                         .resizable()
                     
                         .scaledToFill()
-                        .frame(width: .infinity , height: 185)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 185)
                         .clipShape(.rect(cornerRadius: 15))
                         .clipped()
                     Button {
@@ -80,6 +79,6 @@ struct TableItem: View {
     
 }
 
-//#Preview {
-//    TableItem()
-//}
+#Preview {
+    ContentView()
+}

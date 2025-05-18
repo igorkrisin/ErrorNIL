@@ -1,0 +1,75 @@
+//
+//  TaskItemView.swift
+//  HW 6 task LIST
+//
+//  Created by Игорь Крысин on 04.08.2024.
+//
+
+import SwiftUI
+
+struct ListTaskItemView: View {
+    @State var descrTask: String
+    @State private var isSheetPresented = false
+    
+    @Binding var task: TaskModel
+    @StateObject var viewModel = TaskContentVM()
+    
+    var body: some View {
+        VStack {
+            VStack {
+                Text(task.name ?? "")
+            }
+            ZStack (alignment: .bottomTrailing) {
+                Form {
+                    
+                    ForEach(viewModel.descriptionTaskArray) { item in
+                        VStack(alignment: .leading, spacing: 10, content: {
+                            Text(item.description)
+                                .font(.system(size: 20, weight: .regular))
+                            HStack {
+                                Text("\(item.date)")
+                                    .font(.system(size: 16, weight: .light))
+                                Spacer()
+                                Button {
+                                    viewModel.deleteItemFromArray(task: item)
+                                } label: {
+                                    Image(systemName: "trash")
+                                }
+                                
+                            }
+                        })
+                        
+                        
+                        
+                    }
+                    .onAppear{
+                        print("TaskItemVM: ", viewModel.descriptionTaskArray)
+                    }
+                }
+                Button {
+                    isSheetPresented = true
+                } label: {
+                    Image(systemName: "plus")
+                        .padding(30)
+                        .foregroundStyle(.white)
+                        .background(.blue)
+                        .clipShape(Circle())
+                        .padding(20)
+                }
+                .sheet(isPresented: $isSheetPresented, content: {
+                    SheetView(textDescript: $descrTask)
+                        .onDisappear{
+                            print("cnGetData: ", viewModel.getData())
+                            viewModel.getData()
+                        }
+                })
+
+            }
+        }
+        
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        
+    }
+}
+
+
